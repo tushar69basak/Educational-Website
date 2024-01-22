@@ -723,3 +723,41 @@ section {
 	color: var(--pink);
 }
 /* footer end  */
+
+/* media */
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+}
+@media (max-width: 768px) {
+	.header #menu-btn {
+		display: inline-block;
+	}
+	.header .navbar {
+		position: absolute;
+		top: 99%;
+		right: 0;
+		left: 0;
+		background-color: var(--white);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		box-shadow: var(--box-shadow);
+	}
+	.header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	.header .navbar a {
+		margin: 2rem;
+		font: 3rem;
+		text-align: center;
+		display: block;
+	}
+	.home .slider .content h3 {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+}

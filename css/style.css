@@ -122,3 +122,85 @@ section {
 	display: none;
 }
 /* header end  */
+
+/* account-form start  */
+.account-form {
+	position: fixed;
+	right: -105%;
+	top: 0;
+	width: 35rem;
+	background-color: var(--white);
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	height: 100%;
+	padding: 2rem;
+	text-align: center;
+	z-index: 1300;
+	flex-flow: column;
+}
+.account-form.active {
+	right: 0;
+	box-shadow: var(--box-shadow);
+}
+
+.account-form #close-form {
+	position: absolute;
+	top: 1.5rem;
+	right: 2.5rem;
+	font-size: 4rem;
+	cursor: pointer;
+	color: var(--black);
+}
+.account-form #close-form:hover {
+	color: var(--pink);
+	transform: rotate(180deg);
+}
+.account-form form {
+	border: var(--border);
+	padding: 2rem;
+	display: none;
+}
+.account-form form.active {
+	display: block;
+}
+.account-form form h3 {
+	font-size: 2.5rem;
+	color: var(--black);
+	padding-bottom: 0.5rem;
+}
+.account-form form .box {
+	width: 100%;
+	padding: 1.2rem 1.4rem;
+	border: var(--border);
+	font-size: 1.6rem;
+	margin: 0.7rem 0;
+}
+.account-form form .flex {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.account-form form .flex label {
+	font-size: 1.5rem;
+	color: var(--light-color);
+	cursor: pointer;
+}
+.account-form form .flex a {
+	font-size: 1.5rem;
+	color: var(--light-color);
+	margin-left: auto;
+}
+.account-form form .flex a:hover {
+	text-decoration: underline;
+	color: var(--pink);
+}
+.account-form .buttons .btn {
+	margin: 0 0.5rem;
+}
+.account-form .buttons .btn.active {
+	color: var(--white);
+	background-color: var(--pink);
+}
+/* account-form end  */
